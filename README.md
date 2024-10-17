@@ -75,11 +75,9 @@ The vertex shader processes each vertex in the scene, preparing the necessary da
 
 The fragment shader handles the core computation for rendering the Mandelbrot set. For each pixel on the screen, it calculates whether the corresponding complex number diverges under iteration of the Mandelbrot function:
 
-\[
-z_{n+1} = z_n^2 + c
-\]
+$$z_{n+1} = z_n^2 + c$$
 
-Where `c` is a complex number representing the point on the complex plane corresponding to the pixel, and `z_0 = 0`. The shader iterates this function for each pixel and assigns a color based on how quickly the point "escapes" to infinity, or if it remains within a bounded region (part of the Mandelbrot set).
+Where $$c$$ is a complex number representing the point on the complex plane corresponding to the pixel, and $$z_0 = 0$$. The shader iterates this function for each pixel and assigns a color based on how quickly the point "escapes" to infinity, or if it remains within a bounded region (part of the Mandelbrot set).
 
 #### Key Parameters in the Shader:
 
@@ -91,11 +89,9 @@ Where `c` is a complex number representing the point on the complex plane corres
 
 The **Mandelbrot Set** is a collection of points in the complex plane. It is defined by the behavior of the function:
 
-\[
-f(z) = z^2 + c
-\]
+$$f(z) = z^2 + c$$
 
-Starting with \( z = 0 \), we apply the function iteratively, checking whether the value remains bounded. If it does, the point `c` is part of the Mandelbrot set. Otherwise, it "escapes" to infinity, and we assign a color based on how fast this escape happens.
+Starting with $$z = 0$$, we apply the function iteratively, checking whether the value remains bounded. If it does, the point $$c$$ is part of the Mandelbrot set. Otherwise, it "escapes" to infinity, and we assign a color based on how fast this escape happens.
 
 One of the most fascinating aspects of the Mandelbrot set is its infinite complexity. No matter how much you zoom in, new patterns emerge, revealing intricate, self-similar structures.
 
