@@ -53,7 +53,7 @@ Once the program starts, a window will open, displaying the Mandelbrot set. You 
 
 - **Zoom in/out**: Use the scroll wheel of your mouse or touchpad to zoom into or out of the fractal.
 - **Pan the view**: Click and drag with your mouse to move around the fractal.
-- **Reset view**: Press the `R` key to reset the view to the default zoom level and position.
+- **Reset view**: Press the `B` (back) key to reset the view to the default zoom level and position.
 
 For advanced users, command-line arguments or configuration files may be used in future versions to set initial parameters like zoom level, iteration depth, and color schemes.
 
